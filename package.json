@@ -1,12 +1,15 @@
 {
   "name": "Travis_demo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Demonstrate Travis CI",
   "main": "hello.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jshint hello.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "hackertron",
+  "license": "ISC",
+  "devDependencies": {
+    "jshint": "^2.9.6"
+  }
 }
