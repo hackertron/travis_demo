@@ -1,18 +1,15 @@
 {
-  "name": "Travis_demo",
+  "name": "mochatest",
   "version": "1.0.0",
-  "description": "Demonstrate Travis CI",
-  "main": "hello.js",
+  "description": "Simple app for testing",
+  "main": "app.js",
   "scripts": {
-    "pretest": "eslint --ignore-path .gitignore .",
-   "test": "jshint hello.js"
+    "test": "mocha || true"
   },
-  "keywords": [],
-  "author": "hackertron",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^5.5.0",
-    "eslint-config-google": "^0.10.0",
-    "jshint": "^2.9.6"
+    "chai": "^3.5.0",
+    "mocha": "^3.3.0"
   }
 }
