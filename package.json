@@ -4,12 +4,15 @@
   "description": "Demonstrate Travis CI",
   "main": "hello.js",
   "scripts": {
-    "test": "jshint hello.js"
+    "pretest": "eslint --ignore-path .gitignore .",
+   "test": "jshint hello.js"
   },
   "keywords": [],
   "author": "hackertron",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^5.5.0",
+    "eslint-config-google": "^0.10.0",
     "jshint": "^2.9.6"
   }
 }
